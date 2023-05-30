@@ -1,0 +1,62 @@
+.NewsCard {
+   background-color: #e8e8e8;
+   width: 230px;
+   border-radius: 10px;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+   transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+   cursor: pointer;
+ }
+ 
+ .NewsCard:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
+ }
+ 
+ .NewsCard .container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 15px;
+ }
+ 
+ .NewsCard .container .desc {
+   font-size: 0.9rem;
+ }
+ 
+ .NewsCard .container .date {
+   font-size: 12px;
+   color: #808080;
+ }
+ 
+ .NewsCard .container .image img {
+   width: 100%;
+   border-radius: 5px;
+ }
+ 
+ .NewsCard .container button {
+   padding: 8px 13px;
+   border: none;
+   background-color: #1985f1;
+   border-radius: 5px;
+   color: white;
+   margin-top: 10px;
+   cursor: pointer;
+   transition: background-color ease-in-out 0.3s;
+ }
+ 
+ .NewsCard .container button:hover {
+   background-color: #087cef;
+   transform: scale(1.1);
+ }
+ 
+ .NewsCard .container button:active {
+   background-color: #1985f1;
+   transform: scale(1);
+ }
+ 
+ @media screen and (max-width: 767px) {
+   .NewsCard {
+     width: 100%;
+     max-width: 400px; /* Adjust max-width as needed */
+   }
+ }

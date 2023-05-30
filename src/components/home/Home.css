@@ -1,0 +1,79 @@
+.Home {
+   width: 100%;
+   background-color: #ededed;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+.Home .container {
+   width: 90%;
+}
+.Home .container nav {
+   padding-top: 20px;
+   align-items: center;
+   justify-content: space-between;
+}
+.Home .container nav .heading {
+   align-items: center;
+   gap: 20px;
+}
+.Home .container nav .heading .title {
+   font-size: 2.3rem;
+}
+.Home .container nav .heading ul {
+   align-items: center;
+   gap: 20px;
+   cursor: pointer;
+}
+.Home .container nav .heading ul li {
+   color: black;
+   transition: all ease-in-out 0.2s;
+}
+.Home .container nav .heading ul li:hover {
+   color: #1b1b1b;
+   scale: 1.1;
+}
+.Home .container nav .heading ul li:active {
+   scale: 1;
+   color: black;
+}
+.Home .container nav .search-box {
+   gap: 10px;
+}
+.Home .container nav .search-box input {
+   width: 200px;
+   padding-inline: 10px;
+   padding-block: 8px;
+   border-radius: 5px;
+   border: 1px solid #1985f1;
+}
+.Home .container nav .search-box button {
+   padding-inline: 13px;
+   padding-block: 8px;
+   border: none;
+   background-color: #1985f1;
+   border-radius: 5px;
+   color: white;
+   transition: all ease-in-out 0.2s;
+}
+.Home .container nav .search-box button:hover {
+   background-color: #087cef;
+   scale: 1.1;
+}
+.Home .container nav .search-box button:active {
+   background-color: #1985f1;
+   scale: 1;
+}
+.Home .container .news-feed {
+   margin-top: 25px;
+   padding-block: 30px;
+   justify-content: center;
+   gap: 50px;
+   flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+   .Home .container nav {
+      flex-direction: column;
+      gap: 30px;
+  }
+}
